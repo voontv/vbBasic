@@ -26,7 +26,14 @@
 
                 Console.WriteLine("Uoc chung lon nhat la {0} ", exercise1.UCLN(num1, num2))
                 Console.WriteLine("Boi chung nho nhat la {0} ", exercise1.BCNN(num1, num2))
+            Case 2
+                Dim exercise2 As New Exercise2()
+                Dim num As Integer
 
+                Console.WriteLine("Nhap so nguyen can tim")
+                num = Int(Console.ReadLine())
+
+                Console.WriteLine("Tong cac chu so la {0}", exercise2.SumAllNumberInteger(num))
             Case 0
                 Console.WriteLine("Thoat chuong trinh")
         End Select
