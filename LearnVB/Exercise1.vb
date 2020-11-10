@@ -33,9 +33,9 @@
         ElseIf UCLN(num1, num2) = 1 Then
             Return num1 * num2
         ElseIf num1 > num2 Then
-            Return num2 * UCLN(num1, num2)
-        Else
             Return num1 * UCLN(num1, num2)
+        Else
+            Return num2 * UCLN(num1, num2)
         End If
     End Function
 End Class
