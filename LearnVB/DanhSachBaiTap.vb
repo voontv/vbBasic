@@ -4,6 +4,7 @@
         Console.WriteLine("1. Tim boi chung nho nhat va uoc chung lon nhat")
         Console.WriteLine("2. Tim tong chu so cua 1 so nguyen")
         Console.WriteLine("3. Nhap vao so nguyen va phan tich so do ra thua so nguyen to")
+        Console.WriteLine("4. Nhap vao so nguyen n va xuat ra so Fibo khon lon hon n")
     End Sub
 
     Sub ThucHienBaiTap()
@@ -43,6 +44,14 @@
                 Console.WriteLine("Nhap so nguyen can tim")
                 num = Int(Console.ReadLine())
                 Console.WriteLine("So phan tich ra  so nguyen to {0}", exercise3.phanTichNguyenTo(num))
+
+            Case 4
+                Dim exercise4 As New Exercise4()
+                Dim num As Integer
+
+                Console.WriteLine("Nhap so nguyen")
+                num = Int(Console.ReadLine)
+                exercise4.showFiboInRange(num)
 
             Case 0
                 Console.WriteLine("Thoat chuong trinh")
