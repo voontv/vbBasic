@@ -5,6 +5,8 @@
         Console.WriteLine("2. Tim tong chu so cua 1 so nguyen")
         Console.WriteLine("3. Nhap vao so nguyen va phan tich so do ra thua so nguyen to")
         Console.WriteLine("4. Nhap vao so nguyen n va xuat ra so Fibo khon lon hon n")
+        Console.WriteLine("6. Tong day so theo quy luat")
+        Console.WriteLine("7. Tinh giai thua cua 1 chang")
     End Sub
 
     Sub ThucHienBaiTap()
@@ -52,6 +54,26 @@
                 Console.WriteLine("Nhap so nguyen")
                 num = Int(Console.ReadLine)
                 exercise4.showFiboInRange(num)
+
+            Case 5
+                Dim exercise5 As New Exercise5()
+                exercise5.showNumber()
+
+            Case 6
+                Dim exercise6 As New Exercise6()
+                Dim num As Integer
+
+                Console.WriteLine("Nhap so nguyen")
+                num = Int(Console.ReadLine)
+                Console.WriteLine("Ket qua la {0} ", exercise6.sumRange(num))
+
+            Case 7
+                Dim exercise7 As New Exercise7()
+                Dim num As Integer
+
+                Console.WriteLine("Nhap so nguyen")
+                num = Int(Console.ReadLine)
+                Console.WriteLine("Ket qua la {0} ", exercise7.giaiThua(num))
 
             Case 0
                 Console.WriteLine("Thoat chuong trinh")
