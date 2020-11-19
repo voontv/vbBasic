@@ -7,6 +7,7 @@
         Console.WriteLine("4. Nhap vao so nguyen n va xuat ra so Fibo khon lon hon n")
         Console.WriteLine("6. Tong day so theo quy luat")
         Console.WriteLine("7. Tinh giai thua cua 1 chang")
+        Console.WriteLine("8. Tinh so PI cho phep sai so 0.0001")
     End Sub
 
     Sub ThucHienBaiTap()
@@ -75,6 +76,10 @@
                 num = Int(Console.ReadLine)
                 Console.WriteLine("Ket qua la {0} ", exercise7.giaiThua(num))
 
+            Case 8
+                Dim exercise8 As New Exercise8()
+
+                Console.WriteLine("Ket qua la {0} ", exercise8.tinhSoPI())
             Case 0
                 Console.WriteLine("Thoat chuong trinh")
         End Select
